@@ -17,7 +17,7 @@ public class AddNewWidgetDialog {
     private ElementsCollection buttons;
     private int step;
 
-    public void isDialogPresent() {
+    public AddNewWidgetDialog isDialogPresent() {
         this.dialogContent = $(By.cssSelector("div.widgetWizardModal__modal-window--Kh7Ff"));
         dialogContent.shouldBe(visible);
         dialogContent.$(By.cssSelector("span.modalHeader__modal-title--pusR8"))
@@ -27,14 +27,16 @@ public class AddNewWidgetDialog {
         this.stepsList = dialogContent.$$("div.stepLabelItem__step-label-item--kSkLn");
         stepsList.get(step).shouldHave(Condition.cssClass("stepLabelItem__active--nOKyy"));
         this.buttons = dialogContent.$$(By.cssSelector("button.ghostButton__ghost-button--r7c9T"));
+        return this;
     }
 
-    public void closeDialog() {
+    public AddNewWidgetDialog closeDialog() {
         waitForVisibilityAndClick(dialogContent.$(By.cssSelector("div.modalHeader__close-modal-icon--VeAZ5")));
         dialogContent.should(disappear);
+        return this;
     }
 
-    public void selectWidgetByType(String widgetTypeName) {
+    public AddNewWidgetDialog selectWidgetByType(String widgetTypeName) {
         dialogContent.$(By.cssSelector("div.widgetTypeSelector__widget-type-selector-heading--a6h1k"))
                 .shouldBe(visible)
                 .shouldHave(Condition.text("Choose widget type from the list below"));
@@ -45,23 +47,26 @@ public class AddNewWidgetDialog {
                 .shouldHave(Condition.cssClass("inputRadio__checked--BzIAN"));
         dialogContent.$(By.cssSelector("div.widgetInfoBlock__widget-title--bVFTW"))
                 .shouldHave(Condition.text(widgetTypeName));
+        return this;
     }
 
-    public void clickNextStepButton() {
+    public AddNewWidgetDialog clickNextStepButton() {
         SelenideElement nextStepButton = buttons.findBy(Condition.text("Next step"));
         waitForVisibilityAndClick(nextStepButton);
         step++;
         stepsList.get(step).shouldHave(Condition.cssClass("stepLabelItem__active--nOKyy"));
+        return this;
     }
 
-    public void clickPreviousStepButton() {
+    public AddNewWidgetDialog clickPreviousStepButton() {
         SelenideElement previousStepButton = buttons.findBy(Condition.text("Previous step"));
         waitForVisibilityAndClick(previousStepButton);
         step--;
         stepsList.get(step).shouldHave(Condition.cssClass("stepLabelItem__active--nOKyy"));
+        return this;
     }
 
-    public void selectFilterByName(String filterName) {
+    public AddNewWidgetDialog selectFilterByName(String filterName) {
         dialogContent.$(By.cssSelector("span.activeFilter__filters-text--Y09hF"))
                 .shouldBe(visible)
                 .shouldHave(Condition.text("Choose filter from the list below"));
@@ -70,18 +75,21 @@ public class AddNewWidgetDialog {
         needFilter.$(By.cssSelector("label")).click();
         needFilter.$(By.cssSelector("span.inputRadio__toggler--ygpdQ"))
                 .shouldHave(Condition.cssClass("inputRadio__checked--BzIAN"));
+        return this;
     }
 
-    public void setWidgetName(String widgetName) {
+    public AddNewWidgetDialog setWidgetName(String widgetName) {
         SelenideElement widgetNameInput = dialogContent.$(By.cssSelector("input.input__input--iYEmM"));
         widgetNameInput.clear();
         widgetNameInput.setValue(widgetName);
+        return this;
 
     }
 
-    public void clickAddButton() {
+    public AddNewWidgetDialog clickAddButton() {
         waitForVisibilityAndClick(dialogContent.$(By.cssSelector("button.bigButton__big-button--BmG4Q")));
         dialogContent.should(disappear);
+        return this;
     }
 
 

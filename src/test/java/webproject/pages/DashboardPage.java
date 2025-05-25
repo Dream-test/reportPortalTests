@@ -6,6 +6,7 @@ import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import webproject.modaldialogs.DeleteWidgetDialog;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$$;
@@ -17,13 +18,15 @@ public class DashboardPage {
     private final ElementsCollection pageButtons = $$(By.cssSelector("span.ghostButton__text--SjHtK"));
     private ElementsCollection widgets;
 
-    public void isPageLoaded() {
+    public DashboardPage isPageLoaded() {
         dashboardName.shouldBe(visible).shouldHave(Condition.attribute("title"));
         this.widgets = $$(By.cssSelector("div.react-grid-item"));
+        return this;
     }
 
-    public void checkDashboardName(String name) {
+    public DashboardPage checkDashboardName(String name) {
         dashboardName.shouldHave(Condition.text(name));
+        return this;
     }
 
     public void addNewWidget() {
@@ -42,6 +45,8 @@ public class DashboardPage {
             SelenideElement widgetHeader = deletingWidget.$("div.widget__widget-header--YaPlQ");
             widgetHeader.hover();
             waitForVisibilityAndClick(widgetHeader.$$("svg").get(2));
+            DeleteWidgetDialog.isDialogPresent();
+            DeleteWidgetDialog.deleteButtonClick();
 
         }
     }
