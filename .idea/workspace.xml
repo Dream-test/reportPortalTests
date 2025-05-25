@@ -4,18 +4,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="093b9bd5-b4b6-4a52-a320-73bbfccd54b4" name="Changes" comment="" />
+    <list default="true" id="093b9bd5-b4b6-4a52-a320-73bbfccd54b4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/webproject/elements/MainMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/webproject/modaldialogs/AddNewWidgetDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/webproject/modaldialogs/DeleteWidgetDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/webproject/pages/AllDashboardsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/webproject/pages/DashboardPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/webproject/pages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/webproject/tests/UITests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/webproject/utils/CustomActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Dream-test&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Dream-test/reportPortalTests.git&quot;,
+    &quot;accountId&quot;: &quot;3cc047a8-d331-4911-bd79-903253d35046&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2xSTCkxeioJJ4Xp74guItsi5XUG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -23,12 +52,37 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.UITests.addWidgetTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "dev",
     "onboarding.tips.debug.path": "C:/Users/Admin/IdeaProjects/reportPortalTests/src/main/java/webproject/Main.java"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="UITests.addWidgetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reportPortalTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webproject.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webproject.tests" />
+      <option name="MAIN_CLASS_NAME" value="webproject.tests.UITests" />
+      <option name="METHOD_NAME" value="addWidgetTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UITests.addWidgetTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="093b9bd5-b4b6-4a52-a320-73bbfccd54b4" name="Changes" comment="" />
@@ -38,6 +92,17 @@
       <updated>1747930352592</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
