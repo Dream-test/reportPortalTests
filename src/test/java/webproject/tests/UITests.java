@@ -43,7 +43,7 @@ public class UITests extends AuthorizedTest {
                     .isDialogPresent()
                     .selectWidgetByType(widgetTypeName)
                     .clickNextStepButton()
-                    .selectFilterByName(filterName)
+                    .selectFirstFilter()
                     .clickNextStepButton()
                     .setWidgetName(widgetName)
                     .clickAddButton();

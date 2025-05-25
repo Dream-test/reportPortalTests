@@ -66,14 +66,14 @@ public class AddNewWidgetDialog {
         return this;
     }
 
-    public AddNewWidgetDialog selectFilterByName(String filterName) {
+    public AddNewWidgetDialog selectFirstFilter() {
         dialogContent.$(By.cssSelector("span.activeFilter__filters-text--Y09hF"))
                 .shouldBe(visible)
                 .shouldHave(Condition.text("Choose filter from the list below"));
         ElementsCollection filters = $$(By.cssSelector("div.filtersItem__filter-item--DHlV9"));
-        SelenideElement needFilter = filters.findBy(Condition.text(filterName));
-        needFilter.$(By.cssSelector("label")).click();
-        needFilter.$(By.cssSelector("span.inputRadio__toggler--ygpdQ"))
+        SelenideElement firstFilter = filters.first();
+        firstFilter.$(By.cssSelector("label")).click();
+        firstFilter.$(By.cssSelector("span.inputRadio__toggler--ygpdQ"))
                 .shouldHave(Condition.cssClass("inputRadio__checked--BzIAN"));
         return this;
     }

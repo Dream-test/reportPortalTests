@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="093b9bd5-b4b6-4a52-a320-73bbfccd54b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/webproject/base/AuthorizedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/webproject/base/UITestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/webproject/modaldialogs/AddNewWidgetDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webproject/modaldialogs/AddNewWidgetDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/webproject/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webproject/pages/DashboardPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/webproject/tests/UITests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webproject/tests/UITests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,12 +29,22 @@
     &quot;assignee&quot;: &quot;Dream-test&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Dream-test/reportPortalTests.git&quot;,
-    &quot;accountId&quot;: &quot;3cc047a8-d331-4911-bd79-903253d35046&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Dream-test/reportPortalTests.git",
+    "accountId": "3cc047a8-d331-4911-bd79-903253d35046"
+  },
+  "recentNewPullRequestHead": {
+    "server": {
+      "useHttp": false,
+      "host": "github.com",
+      "port": null,
+      "suffix": null
+    },
+    "owner": "Dream-test",
+    "repository": "reportPortalTests"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -54,11 +60,11 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "dev",
+    "git-widget-placeholder": "#1 on dev",
     "onboarding.tips.debug.path": "C:/Users/Admin/IdeaProjects/reportPortalTests/src/main/java/webproject/Main.java"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.UITests.addWidgetTest">
+  <component name="RunManager" selected="JUnit.UITests">
     <configuration name="UITests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reportPortalTests" />
       <extension name="coverage">
@@ -92,8 +98,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UITests.addWidgetTest" />
         <item itemvalue="JUnit.UITests" />
+        <item itemvalue="JUnit.UITests.addWidgetTest" />
       </list>
     </recent_temporary>
   </component>
