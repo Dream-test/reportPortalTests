@@ -1,0 +1,8 @@
+description,name,testType
+"Basic description 001","db1","Check status 201, name and dashboard exist when add empty dashboard with Min length name"
+"Basic description 002","Maximal_length_name_Maximal_length_name_Maximal_length_name_Maximal_length_name_Maximal_length_name_Maximal_length_name_Maximal_","Check status 201, name and dashboard exist when add empty dashboard with Max length name"
+"Basic description 003","1234567890!@#$%^&*(){}_-[]?:;<>~|/","Check status 201, name and dashboard exist when add empty dashboard with All special characters in the name"
+,"Test_dashboard_004","Check status 201, name and dashboard exist when add empty dashboard without description data"
+"Basic description 005"," 1D ","Check status 201, name and dashboard exist when add empty dashboard with space and characters"
+"Basic description 006","Дашборд_тест_名称","Check status 201, name and dashboard exist when add empty dashboard with unicode"
+"1234567890!@#$%^&*(){}_-[]?:;<>~|/","Test_dashboard_1000","Check status 201, name and dashboard exist when add empty dashboard with All special characters in the description"

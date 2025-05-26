@@ -4,18 +4,57 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="093b9bd5-b4b6-4a52-a320-73bbfccd54b4" name="Changes" comment="" />
+    <list default="true" id="093b9bd5-b4b6-4a52-a320-73bbfccd54b4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/apiproject/configurations/TestConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/apiproject/controllers/DashboardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/apiproject/models/Dashboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/apiproject/tests/DashboardApiTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/webproject/utils/DashboardUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/reportportal.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata/dashboards_invalid.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata/dashboards_valid.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Dream-test&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Dream-test/reportPortalTests.git",
+    "accountId": "3cc047a8-d331-4911-bd79-903253d35046"
+  },
+  "recentNewPullRequestHead": {
+    "server": {
+      "useHttp": false,
+      "host": "github.com",
+      "port": null,
+      "suffix": null
+    },
+    "owner": "Dream-test",
+    "repository": "reportPortalTests"
+  }
 }]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2xSTCkxeioJJ4Xp74guItsi5XUG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -23,12 +62,112 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.DashboardApiTests$NegativeCases.checkFailToCreateDashboardWithExistName.executor": "Run",
+    "JUnit.DashboardApiTests$NegativeCases.checkFailToCreateDashboardWithInvalidInput.executor": "Run",
+    "JUnit.DashboardApiTests$PositiveCases.checkCreateDashboardWithValidInput.executor": "Run",
+    "JUnit.DashboardApiTests.checkAddDashboardWithInvalid.executor": "Run",
+    "JUnit.DashboardApiTests.checkAddDashboardWithValid.executor": "Run",
+    "JUnit.DashboardApiTests.checkCreateDashboardWithValidInput.executor": "Run",
+    "JUnit.DashboardApiTests.executor": "Run",
+    "JUnit.UITests.addWidgetTest.executor": "Run",
+    "JUnit.UITests.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "#1 on dev",
     "onboarding.tips.debug.path": "C:/Users/Admin/IdeaProjects/reportPortalTests/src/main/java/webproject/Main.java"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.DashboardApiTests$NegativeCases.checkFailToCreateDashboardWithExistName">
+    <configuration name="DashboardApiTests$NegativeCases.checkFailToCreateDashboardWithExistName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reportPortalTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiproject.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiproject.tests.DashboardApiTests" />
+      <option name="MAIN_CLASS_NAME" value="apiproject.tests.DashboardApiTests$NegativeCases" />
+      <option name="METHOD_NAME" value="checkFailToCreateDashboardWithExistName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DashboardApiTests$NegativeCases.checkFailToCreateDashboardWithInvalidInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reportPortalTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiproject.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiproject.tests.DashboardApiTests" />
+      <option name="MAIN_CLASS_NAME" value="apiproject.tests.DashboardApiTests$NegativeCases" />
+      <option name="METHOD_NAME" value="checkFailToCreateDashboardWithInvalidInput(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DashboardApiTests$PositiveCases.checkCreateDashboardWithValidInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reportPortalTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiproject.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiproject.tests.DashboardApiTests" />
+      <option name="MAIN_CLASS_NAME" value="apiproject.tests.DashboardApiTests$PositiveCases" />
+      <option name="METHOD_NAME" value="checkCreateDashboardWithValidInput(java.lang.String,java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DashboardApiTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reportPortalTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiproject.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiproject.tests" />
+      <option name="MAIN_CLASS_NAME" value="apiproject.tests.DashboardApiTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DashboardApiTests.checkCreateDashboardWithValidInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reportPortalTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiproject.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiproject.tests" />
+      <option name="MAIN_CLASS_NAME" value="apiproject.tests.DashboardApiTests" />
+      <option name="METHOD_NAME" value="checkCreateDashboardWithValidInput" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DashboardApiTests$NegativeCases.checkFailToCreateDashboardWithExistName" />
+        <item itemvalue="JUnit.DashboardApiTests" />
+        <item itemvalue="JUnit.DashboardApiTests$PositiveCases.checkCreateDashboardWithValidInput" />
+        <item itemvalue="JUnit.DashboardApiTests$NegativeCases.checkFailToCreateDashboardWithInvalidInput" />
+        <item itemvalue="JUnit.DashboardApiTests.checkCreateDashboardWithValidInput" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="093b9bd5-b4b6-4a52-a320-73bbfccd54b4" name="Changes" comment="" />
@@ -38,6 +177,17 @@
       <updated>1747930352592</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

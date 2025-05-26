@@ -1,0 +1,6 @@
+description,name,message,testType
+"Empty name dashboard",,"Incorrect Request. [Field 'name' should not be null.] ","Check status 400 and not exist when try add dashboard with empty name"
+"Dashboard with short name","D1","Incorrect Request. [Field 'name' should have size from '3' to '128'.] ","Check status 400 and not exist when try add dashboard with short name"
+"Dashboard with long name","Maximal_length_name_Maximal_length_name_Maximal_length_name_Maximal_length_name_Maximal_length_name_Maximal_length_name_Maximal_M","Incorrect Request. [Field 'name' should have size from '3' to '128'.] ","Check status 400 and not exist when try add dashboard with short name"
+"Dashboard with only space in name","   ","Incorrect Request. [Field 'name' should not contain only white spaces and shouldn't be empty. Field 'name' should have size from '3' to '128'.] ","Check status 400 and not exist when try add dashboard with only space in name"
+"Dashboard with empty string in name","","Incorrect Request. [Field 'name' should not contain only white spaces and shouldn't be empty. Field 'name' should have size from '3' to '128'.] ","Check status 400 and not exist when try add dashboard with empty string in name"
