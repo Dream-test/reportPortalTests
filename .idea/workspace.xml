@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="093b9bd5-b4b6-4a52-a320-73bbfccd54b4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/webproject/modaldialogs/AddNewWidgetDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webproject/modaldialogs/AddNewWidgetDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/webproject/tests/UITests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webproject/tests/UITests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/apiproject/configurations/TestConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/apiproject/controllers/DashboardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/apiproject/models/Dashboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/apiproject/tests/DashboardApiTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/webproject/utils/DashboardUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/reportportal.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata/dashboards_invalid.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata/dashboards_valid.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +62,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.DashboardApiTests$NegativeCases.checkFailToCreateDashboardWithExistName.executor": "Run",
+    "JUnit.DashboardApiTests$NegativeCases.checkFailToCreateDashboardWithInvalidInput.executor": "Run",
+    "JUnit.DashboardApiTests$PositiveCases.checkCreateDashboardWithValidInput.executor": "Run",
+    "JUnit.DashboardApiTests.checkAddDashboardWithInvalid.executor": "Run",
+    "JUnit.DashboardApiTests.checkAddDashboardWithValid.executor": "Run",
+    "JUnit.DashboardApiTests.checkCreateDashboardWithValidInput.executor": "Run",
+    "JUnit.DashboardApiTests.executor": "Run",
     "JUnit.UITests.addWidgetTest.executor": "Run",
     "JUnit.UITests.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -64,33 +78,81 @@
     "onboarding.tips.debug.path": "C:/Users/Admin/IdeaProjects/reportPortalTests/src/main/java/webproject/Main.java"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.UITests">
-    <configuration name="UITests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DashboardApiTests$NegativeCases.checkFailToCreateDashboardWithExistName">
+    <configuration name="DashboardApiTests$NegativeCases.checkFailToCreateDashboardWithExistName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reportPortalTests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="webproject.tests.*" />
+          <option name="PATTERN" value="apiproject.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="webproject.tests" />
-      <option name="MAIN_CLASS_NAME" value="webproject.tests.UITests" />
+      <option name="PACKAGE_NAME" value="apiproject.tests.DashboardApiTests" />
+      <option name="MAIN_CLASS_NAME" value="apiproject.tests.DashboardApiTests$NegativeCases" />
+      <option name="METHOD_NAME" value="checkFailToCreateDashboardWithExistName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DashboardApiTests$NegativeCases.checkFailToCreateDashboardWithInvalidInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reportPortalTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiproject.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiproject.tests.DashboardApiTests" />
+      <option name="MAIN_CLASS_NAME" value="apiproject.tests.DashboardApiTests$NegativeCases" />
+      <option name="METHOD_NAME" value="checkFailToCreateDashboardWithInvalidInput(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DashboardApiTests$PositiveCases.checkCreateDashboardWithValidInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reportPortalTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiproject.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiproject.tests.DashboardApiTests" />
+      <option name="MAIN_CLASS_NAME" value="apiproject.tests.DashboardApiTests$PositiveCases" />
+      <option name="METHOD_NAME" value="checkCreateDashboardWithValidInput(java.lang.String,java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DashboardApiTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reportPortalTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiproject.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiproject.tests" />
+      <option name="MAIN_CLASS_NAME" value="apiproject.tests.DashboardApiTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UITests.addWidgetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DashboardApiTests.checkCreateDashboardWithValidInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reportPortalTests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="webproject.tests.*" />
+          <option name="PATTERN" value="apiproject.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="webproject.tests" />
-      <option name="MAIN_CLASS_NAME" value="webproject.tests.UITests" />
-      <option name="METHOD_NAME" value="addWidgetTest" />
+      <option name="PACKAGE_NAME" value="apiproject.tests" />
+      <option name="MAIN_CLASS_NAME" value="apiproject.tests.DashboardApiTests" />
+      <option name="METHOD_NAME" value="checkCreateDashboardWithValidInput" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -98,8 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UITests" />
-        <item itemvalue="JUnit.UITests.addWidgetTest" />
+        <item itemvalue="JUnit.DashboardApiTests$NegativeCases.checkFailToCreateDashboardWithExistName" />
+        <item itemvalue="JUnit.DashboardApiTests" />
+        <item itemvalue="JUnit.DashboardApiTests$PositiveCases.checkCreateDashboardWithValidInput" />
+        <item itemvalue="JUnit.DashboardApiTests$NegativeCases.checkFailToCreateDashboardWithInvalidInput" />
+        <item itemvalue="JUnit.DashboardApiTests.checkCreateDashboardWithValidInput" />
       </list>
     </recent_temporary>
   </component>

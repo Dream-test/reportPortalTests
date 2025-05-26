@@ -13,7 +13,7 @@ public abstract class UITestBase {
     @BeforeAll
     public static void configurationBrowser() {
         Configuration.browserSize = "1366x768";
-        Configuration.headless = false;
+        Configuration.headless = true;
         Configuration.timeout = 10000;
     }
 

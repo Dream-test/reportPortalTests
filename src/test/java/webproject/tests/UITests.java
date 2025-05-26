@@ -10,6 +10,7 @@ import webproject.pages.AllDashboardsPage;
 import webproject.pages.DashboardPage;
 
 import static org.assertj.core.api.Assertions.assertThat;
+
 public class UITests extends AuthorizedTest {
 
     @Epic("Dashboard")
